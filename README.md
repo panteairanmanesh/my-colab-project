@@ -1,7 +1,7 @@
 # my-colab-project
-Part 1: Suitable Python Frameworks for This Dataset
+# Part 1: Suitable Python Frameworks for This Dataset
 
-pandas
+## pandas
 📦 The most popular library for loading, processing, and analyzing tabular data such as CSV and Excel.
 Example (used in this project):
 
@@ -9,29 +9,41 @@ import pandas as pd
 df = pd.read_excel("filename.xlsx")
 
 
-openpyxl / xlrd
+## openpyxl / xlrd
 📦 Libraries for directly reading Excel files. Often used as backends with pandas.
 Example:
 
 df = pd.read_excel("file.xlsx", engine="openpyxl")
 
 
-matplotlib / seaborn
+## matplotlib / seaborn
 📊 Used for visualization and statistical plots (e.g., label distribution, sentence length, histograms, etc.).
 
-scikit-learn
+## scikit-learn
 🤖 Provides machine learning and statistical analysis tools. Also supports text vectorization (TF-IDF, CountVectorizer, etc.).
 
-NLTK / Hazm
+## NLTK / Hazm
 📖 For Natural Language Processing (NLP).
 
 NLTK: mainly for English (tokenization, POS tagging, stopword removal, etc.).
 
 Hazm: specialized for Persian (normalization, stemming, tokenization).
 
-🔹 Part 2: Exploratory Data Analysis (EDA)
+# Part 2: Exploratory Data Analysis (EDA)
 
-Here is a complete EDA plan used in this project:
+## The EDA process includes:
+
+1) Checking the number of samples for each label.
+
+2) Measuring comment lengths (both words and characters).
+
+3) Identifying duplicate or missing values.
+
+4) Visualizations: label distribution, comment length distribution.
+
+5) Displaying random samples from the dataset.
+
+### Here is a complete EDA plan used in this project:
 
 Check the number of samples per label
 
